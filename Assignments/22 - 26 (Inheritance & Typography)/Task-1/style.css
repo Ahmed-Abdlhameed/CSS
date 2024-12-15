@@ -1,0 +1,17 @@
+div {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid #ff3300;
+    padding: 20px 25px;
+    text-align: center;
+    margin: 15px;
+}
+
+.second {
+    border: 2px solid #009688;
+  }
+
+p {
+    border: inherit;
+    padding: inherit;
+    background-color: #DDD;
+}
