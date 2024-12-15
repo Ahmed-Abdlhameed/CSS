@@ -1,0 +1,23 @@
+.d1 {
+    width: 400px;
+    background-color: #DDD;
+    padding: 15px;
+    margin: 10px;
+}
+
+.d2 {
+    width: 400px;
+    background-color: #DDD;
+    padding: 15px;
+    margin: 10px;
+}
+
+.d3 {
+    width: 400px;
+    background-color: #DDD;
+    padding: 15px;
+    margin: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
