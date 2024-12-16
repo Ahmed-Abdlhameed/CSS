@@ -1,0 +1,36 @@
+.parent {
+    font-family: sans-serif;
+    font-weight: bold;
+    width: 1000px;
+    background-color: #eee;
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}
+
+.parent div {
+    float: left;
+    background: #d3d3d3c4;
+    margin-right: 15px;
+    padding: 10px 0px;
+    margin-top: 15px;
+}
+
+.full {
+    width: calc(100% - 30px);
+}
+
+.third {
+   width: calc((100% - 60px) / 3);
+}
+
+.half {
+   width: calc((100% - 45px) / 2);
+}
+   
+.quart {
+   width: calc((100% - 75px) / 4);
+   margin-bottom: 15px;
+}
