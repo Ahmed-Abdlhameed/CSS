@@ -1,0 +1,26 @@
+p {
+    background-color: #EEE;
+    text-align: center;
+    width: 500px;
+    padding: 20px 5px;
+    margin: auto;
+    margin-bottom: 10px;
+    position: relative;
+    border-right: 5px solid #ff0000;
+    font-family: Arial, Helvetica, sans-serif;
+    counter-increment: counter;
+}
+
+p::before {
+    content: counter(counter);
+    background-color: #ff0000;
+    position: absolute;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    width: 20px;
+}
+
