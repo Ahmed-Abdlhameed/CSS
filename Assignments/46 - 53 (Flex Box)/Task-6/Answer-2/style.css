@@ -1,0 +1,63 @@
+:root {
+    --BackgroundColor: #ddd;
+    --padding: 10px;
+    --margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page {
+    background-color: #EEE;
+    overflow: visible;
+    padding: 2px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo, .links {
+    background-color: var(--BackgroundColor);
+    padding: var(--padding);
+    margin: var(--margin);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px; /* just an initial value then we make the links grow in the empty space by flex-grow */
+}
+
+.links {
+    list-style: none;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+li {
+    padding: 0 10px;
+}
+
+.main-area {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content, .sidebar {
+    background-color: var(--BackgroundColor);
+    padding: var(--padding);
+    margin: var(--margin);
+    display: flex;
+    height: 300px;
+    width: 270px; /* just an initial value then we make the content grow in the empty space by flex-grow */
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--BackgroundColor);
+    padding: var(--padding);
+    margin: var(--margin);
+}
