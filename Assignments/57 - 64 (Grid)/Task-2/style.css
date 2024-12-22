@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.layout {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: .22fr 3fr .22fr;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-areas: "head head head head" "sec sec sec side" "foot foot foot foot";
+}
+
+header {
+    grid-area: head;
+    background-color: #03a9f4;
+    padding: 20px;
+}
+
+section {
+    grid-area: sec;
+    background-color: #ff5722;
+    padding: 20px;
+}
+
+aside {
+    grid-area: side;
+    background-color: #607d8b;
+    padding: 20px;
+}
+
+footer {
+    grid-area: foot;
+    background-color: #009688;
+    padding: 20px;
+}
+
+header::before {
+    content: "Header";
+    color: white;
+    font-size: larger;
+}
+
+section::before {
+    content: "Section";
+    color: white;
+    font-size: larger;
+}
+
+aside::before {
+    content: "Aside";
+    color: white;
+    font-size: larger;
+}
+
+footer::before {
+    content: "Footer";
+    color: white;
+    font-size: larger;
+}
+
+
+
