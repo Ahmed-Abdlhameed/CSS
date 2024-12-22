@@ -1,0 +1,29 @@
+div {
+    width: fit-content;
+    margin: 20px auto;
+    position: relative;
+}
+
+input {
+    outline: transparent;
+    border: transparent;
+    width: 600px;
+    caret-color: red;
+    background-color: #eee;
+    padding: 20px;
+    font-size: larger;
+}
+
+div::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    height: 4px;
+    background-image: linear-gradient(
+        to right,
+        #f44336 50%,
+        #009688 50%
+    );
+}
