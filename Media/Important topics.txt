@@ -1,0 +1,19 @@
+>> Multiple video topics:
+#(23 > 24) - Typography
+#(36 > 37) - Pseude elements
+#(46 > 53) - Flex box
+#(57 > 64) - Grid
+#(65 > 73) - Transform
+#(74 > 77) - Animation
+#(78 > 82) - Selectors
+#(83 > 85) - Media queries & Responsive design
+----------------------------
+>> Single video topics:
+#11 - Display
+#22 - Inheritance
+#30 - Position
+#33 - Table styling
+#42 - Transition
+#44 - Margin collapse
+#55 - Gradients
+#87 - Global values

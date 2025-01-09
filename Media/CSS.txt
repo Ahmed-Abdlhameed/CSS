@@ -1,0 +1,1694 @@
+(***) CSS: Cascade style sheet
+(***) /* Comment */
+(***) Lorem: gives you ready paragraph.
+(***) Expressing Elements Syntax:-
+        (*) Method 1:
+                Selector {
+                property: value;
+                propertyTwo: value;
+            } /* This way used when you want to target all the elements of this type */
+
+        -> EX:
+                p {
+                    color: red;
+                    font-size: 40px;
+                }       
+
+        (*) Method 2:
+                .Class Name {
+                property: value;
+                propertyTwo: value;
+            } /* This way used when you want to target the elements with this class precisley */
+
+        -> EX:
+                .paragraph 1 {
+                    color: red;
+                    font-size: 40px;
+                }       
+
+        (*) Method 3:
+                #ID Name {
+                property: value;
+                propertyTwo: value;
+            } /* This way used when you want to target the elements with this ID precisley and this way is not common */
+
+        -> EX:
+                #paragraph 1 {
+                    color: red;
+                    font-size: 40px;
+                }       
+
+        (*) Method 4 (Not used much):
+
+            <p style="color: purple">This Is Paragraph</p> /* You can style the element like this but this way is not used because when the project ends it'll 
+            be hard to edit on the HTML code */
+----------------------------------------------------------------------------------------------------------------------------
+(***) Background color property:-
+        (*) Method 1: Typing the Color Name:
+        -> EX: background-color: red;
+
+        (*) Method 2: Red Green Blue Alpha Channel:
+        -> EX: background-color: rgb(0 0 0 / 50%);
+        Note: The first 0 is for the value red and it means that the red doesn't appear, the same is for the green and Blue
+              and the 0 is the least value but the greatest is 255 means when any color of the three is 255 it appear as full,
+              you can also change between numbers and the color changes as 250, 246, any number between 0 and 255,
+              the 50% is for the alpha and the alpha means the clearness of the color as 100% is the full color and 95% is
+              alittle bit less clearness and so on you can change between the numbers to change the clearness of the color and notice
+              that there is no comma between numbers because if there is th (/) won't work.
+        
+        (*) Method 3: Color Hex Code: (The most used method)
+        -> EX: background-color: #FF0000;
+        Note: The FF is the most powerful color value and the 00 is the least means that the previous example is the full red
+              color and every color has its unique hex code.
+        Note: You can google the color name and get its hex code.
+----------------------------------------------------------------------------------------------------------------------------
+(***) Background image:-
+        (**) background-image: url(the path of the image);
+
+        (**) background-repeat:
+
+            (1) the default value of this property is "repeat" and it means to repeat the image on X axis and Y axis both as long as the 
+            selected HTML elements are and this property works even if you just typed:
+            background-repeat; and not background-repeat: repeat they work as same because repeat is the default value of the
+            background-repeat property itself.
+            EX: background-repeat: repeat;
+
+            (2) if you don't want the image to repeat you just type: background-repeat: no-repeat;
+                and the it will show one image only on the HTML elements until the image is complete and doesn't care for the rest
+                remaining elements.
+
+            (3) if you want the image to repeat on the X axis only you just type: background-repeat: repeat-x;
+
+            (4) if you want the image to repeat on the Y axis only you just type: background-repeat: repeat-y;
+
+        (**) background-attachment:
+
+            (1) the default value of this property is "scroll" which is like when you scroll with the mouse the image remain in the 
+                same place above and don't appear in the whole page.
+            -> EX: background-attachment: scroll;
+
+            (2) if you want the image to appear in the whole page you need then to use the "fixed" and so when you scroll down or 
+                up the image appear.
+            -> EX: background-attachment: fixed;
+
+        (**) background-position: Changes the position of the image by 3 methods:
+
+            (*) Method 1: background-position: left top;
+                Note: The first word express the X axis and the second word express Y axis, notice that the second word default
+                      value is center.
+                Note: The words is "top, bottom, left, right, center"
+
+            (*) Method 2: background-position: 20px 0px;
+                Note: This way uses the pixels to change the image position and the first number is for X axis and the second
+                number is for Y axis.
+
+            (*) Method 3: background-position: 10% 5%;
+                Note: This way uses the percent to change the image position and the first percent is for X axis and second 
+                number is for Y axis.
+
+        (**) background-size: Changes the size of the image.
+             
+             (1) background-size: auto; 
+             Note: Doesn't do anything as image remian as it is and this is the default value.
+
+             (2) background-size: cover;
+             Note: Covers the whole page and make the image strech and this is the best one.
+
+             (3) background-size: contain;
+             Note: Shows the image size as it is and doesn't make it strech on the page.
+
+             (4) background-size: 100px 200px;
+             Note: Customize the image size using pixels and the first number is for image width and the second is for the hight
+             and this way is not used much.
+----------------------------------------------------------------------------------------------------------------------------
+(***) Padding:-
+        (*) Padding works like clock (Top Right Bottom Left)
+
+        1- if you typed: padding: 10px; then it will use the same 10px for all values as: padding: 10px 10px 10px 10px;
+
+        2- if you typed: padding: 10px 15px; then every unwritten value takes like the value faces it as in clock top faces bottom,
+            right faces left and so the 10px is top, 15px is right and so the bottom wull be 10px like top and the left will be
+            15px like right.
+
+        3- if you typed: padding: 10px 15px 20px; then the 10px is top, 15px is right, 20px is bottom and the left value will take
+            just like right so it will be 15px.
+
+        4- but what if you only want a bottom padding or any single padding alone what should you do?
+            in this case if we want bottom we type padding-bottom: 10px; or if we want right we type padding-right: 10px; and so on.
+        
+        -> Notice that:
+            (1) you can type them all like:
+
+                padding-top: 10px;
+                padding-right: 15px;
+                padding-bottom: 20px;
+                padding-left: 25px;
+
+                    but this way is not the best practise and takes more space the most common is using just padding and type wanted values
+                    and this way called shortage like:
+                    padding: 10px;
+
+            (2) The padding property can also accept percents as 10% and so on but it doesn't accept negative values.
+----------------------------------------------------------------------------------------------------------------------------
+(***) Margin:-
+        It's like padding but it's for the continer of the selected element and not the element itself (check pics difference between 
+        padding and margin).
+
+        -> you can type all padding four cases and also it accept percents (%) and negative values but the best practise is using 
+           "auto" like:
+           margin: auto; or
+           margin-left: auto;
+           margin-right: auto;
+        - Notice that we just typed left and right only Why? because the continer can be cntrolled from its width but not hight.
+
+        -> EX:
+            width: 80%
+           margin-left: auto;
+           margin-right: auto;
+
+        - Notice that it's auto but if you want to adjust it manually then you calculate it as following:
+          the width is 80% then the continer left 20% empty you need then to adjust them equally between left and right like:
+
+          width: 80%
+          margin-left: 10%
+          OR
+          width: 80%
+          margin-right: 10%
+
+        -Notice that we just typed one of them left or right why? because the browser will take the remaining space as it will be 10%.
+        - The manual way is not used much and best practis is to use auto.
+        - for more check the margin video it's downloaded :)
+
+        - How can you center the element with margin?
+        position: absolute;
+        top: 50%;
+        left: 50%
+        margin-left: -1/2 of width;
+        margin-top: -1/2 of height;
+----------------------------------------------------------------------------------------------------------------------------
+(***) Border:
+        This is like the boundaries of the element.
+
+        (1) border-width: 10px; /* THe width of the border is its thikness */
+        -> Notice that this value is for the 4 values (top-right-bottom-left) like the padding or margin above and you can adjust 
+           each one of them separetly.
+        like: 
+        border-top-width: 10px;
+        border-right-width: 10px;
+        border-bottom-width: 10px;
+        border-left-width: 10px;
+
+        OR:
+        border-width: 10px 10px 10px 10px; /* and this is the short code and you can also adjust each value of them separetly */
+
+        (2) border-color: red;
+        -> Notice that this value is for the 4 values (top-right-bottom-left) like the padding or margin above and you can adjust 
+           each one of them separetly.
+        like: 
+        border-top-color: red;
+        border-right-color: red;
+        border-bottom-color: red;
+        border-left-color: red;
+
+        OR:
+        border-color: red red red red; /* and this is the short code and you can also adjust each value of them separetly */
+
+        (3) border-style: solid;
+        -> Notice that:
+           (1) there're many kinds of border styles like: dashed, dotted, double and much more you can get from the inspect code
+           but the most used one is the solid style as normal and the dashed when uploading a file.
+
+           (2) the border won't appear until the style tag is written even if you wrote the width and color.
+
+           (3) this value is for the 4 values (top-right-bottom-left) like the padding or margin above and you can adjust 
+           each one of them separetly.
+           like: 
+            border-top-style: solid;
+            border-right-style: solid;
+            border-bottom-style: solid;
+            border-left-style: solid;
+
+            OR:
+            border-style: solid solid solid solid; /* and this is the short code and you can also adjust each value of them separetly */
+
+        (*) There is a short code for the whole border and it's like: borde: width style color;
+        -> EX: border: 10px solid red;
+        -> Notice that: 
+           (1) you can't adjust each value separetly now like if you want the width to be 10px 20px 30px 40px 
+           you can't do that but if you want to then you can write the border-width code alone like above.  
+
+           (2) you can wrtie this short code for just one side of the border like:
+               border-top: 10px solid red;  
+               border-right: 10px solid red;  
+               border-bottom: 10px solid red;  
+               border-left: 10px solid red;
+----------------------------------------------------------------------------------------------------------------------------
+(***) Outline: Just like the border but worse and not used much.
+      Notice: you can't write the 4 values (top-right-bottom-left) for the style different it has to be the same like:
+      outline-style: solid; 
+      -> for more watch the video it's downloaded.
+----------------------------------------------------------------------------------------------------------------------------
+(***) Display: Comparison between block, inline, inline-block display methods:-
+
+        Block
+
+            - Take Full Width If No Width
+            - Add Line Break
+            - Respect Padding, Margin, Width, Height
+
+        Inline
+
+            - Do Not Repsepct Width, Height
+            - Respect Padding And Margin [ Just Wight + Left ]
+            - Do Not Add Line Break
+            - Allow Elements Before And After It in The Same Line
+
+        Inline-Block
+
+            - Allow Elements Before And After It in The Same Line
+            - Respect Padding, Margin, Width, Height
+            -> Respect width and hight means it takes just as size as the element.
+
+        For more watch the video it's downloaded.
+----------------------------------------------------------------------------------------------------------------------------
+(***) Display & Visibility:-
+      (1) Display: none; /* hides the element from the page and this is used when you want to press a button or someting to
+          show info and press it again to hide the info */
+
+      (2) Visibility: hidden; /* hides the element but its place is kept and this is used when you want to view this element 
+          in a smooth or animated way by the JS */
+----------------------------------------------------------------------------------------------------------------------------
+(***) Grouping: /* Used when there're more than one element have the same properties */
+ 
+ -> EX:
+        .one,
+        .two,
+        .three,
+        .four,
+        .my-p {
+            padding: 15px;
+            margin: 12px 0;
+            background-color: #ededed;
+        }
+
+    Note: here we see more than one element have the same padding, margin, background-color and so we grouped them,
+          you can do this with writing each element separetly with other properties if there other unshared properties like
+          background color for example.
+          you can then preceed like this:
+
+            .one {
+                border-bottom: 2px solid red;
+                color: red;
+            }
+
+            .two {
+                border-bottom: 2px solid green;
+                color: green;
+            }
+
+            .three {
+                border-bottom: 2px solid blue;
+                color: blue;
+            }
+
+            .four {
+                border-bottom: 2px solid black;
+                color: black;
+            }
+
+    Note: here the elements don't share the color and the border-bottom so we wrote them separetly, you can also write the separite
+          code before the grouping code and that's the best option because you write the differences first then the common.
+----------------------------------------------------------------------------------------------------------------------------
+(***) Nesting: /* Target an element inside another element like child in the father */
+
+        -> Syntax: parent or .parent-class child or .child-class {
+            the properties
+            }
+
+        -> EX: if you want to target paragraph inside div:
+            div p {
+
+            } 
+
+        -> EX: if you want to target paragraph inside div with calss "special":
+            div .special {
+
+            } 
+
+        Note: you can just write .classname {} but if there's an element outside the div whit the same classname then
+              you have to use this way. 
+----------------------------------------------------------------------------------------------------------------------------
+(***) Width & Hight:-
+      
+      min-width: 400px;
+      max-width: 800px;
+      min-hight: 400px;
+      max-hight: 800px;
+
+      -> the max and min used to adjust the limits of the element.
+
+      width: fit-content; /* this is the best used to just fit the width of the element */
+      max-width: 100%; /* used to make the image be in its parent and just fit it */
+----------------------------------------------------------------------------------------------------------------------------
+(***) Overflow: /* Dealing the extra content */
+        Syntax:-
+            overflow: visible; "the default value"
+            overflow: hidden; "hide the extra content"
+            overflow: auto; "fill the field as it is"
+
+            overflow-x: visible; "the default value"
+            overflow-x: hidden; "hide the extra content"
+            overflow-x: auto; "fill the field as it is"
+
+            overflow-y: visible; "the default value"
+            overflow-y: hidden; "hide the extra content"
+            overflow-y: auto; "fill the field as it is"
+----------------------------------------------------------------------------------------------------------------------------
+(***) Text:
+
+    (**) Shadow:
+        Syntax: 
+            text-shadow: H-shadow V-shadow Blur Color /* H shadow is for Horizontal shadow and it's like on X axis, but 
+            V sahdow is for Vertical sahdow and it's like on Y axis */
+
+        -> EX: text-shadow: 1px 4px 3px red;
+
+    (**) Alignment:
+
+        (1) text-align: center or right or left;  /* This is where the content is put in the page */
+        (2) direction: ltr or rtl; /* standing for left to right or right to left and this is used to adjust the 
+                        direction of the content like where is the dott is put at the ending of the content when using
+                        english then use the ltr when using arabic then use rtl. */
+        (3) Vertical align: top or bottom or middle; /* This is used when there is an image between a text then 
+                                this property adjust the words with the image */
+
+        -> EX:
+            HTML:
+            <div>Elzero Web <img src="https://via.placeholder.com/60" alt=""> School</div>
+            CSS:
+            Vertical align: middle;
+            
+            and then the final result will be " Elzero web "the image" School "
+
+    (**) Text Decoration: 
+
+        Syntax: text-decoration: line-through or underline or overline;
+        - line-through: the line is on the text like it's deleted.
+        - underline: the line is under the text like the links.
+        - overline: the line is above the text.
+        -> NOTE: the most usage of this property is like: "text-decoration: none;" and this is used to remove the 
+                 the line under the links to make it look better.
+
+    (**) Text Transformation:
+
+        Syntax: text-transform: capitalize or uppercase or lowercase;
+        - capitalize: make the first letter of any word in the text capital.
+        - uppercase: make all the text capital.
+        - lowercase: make all the text small.
+        -> Note: write the text in HTML in small and adjust it like you want from CSS that's best practice.  
+
+    (**) Letter Spacing: /* the space between letters */
+
+        Syntax: letter-spacing: positive or negative px value, the positive value increase the space and the negative
+                decreases it. 
+
+    (**) Word Spacing: /* the space between words in the text */
+
+        Syntax: word-spacing: positive or negative px value, the positive value increase the space and the negative
+                decreases it. 
+
+    (**) Text Indentation: /* the empty space before the text */
+
+        Syntax: positive or negative px value;
+
+    (**) Line Hight: /* the space between text lines */
+
+        Syntax: line-hight: px or percent value;
+        -> EX: line-hight: 1.6 or 160%; notice that this is the beest value because it confort the eyes :)
+    
+    (**) White Space: /* controlls what happen to remaining text when the width ends */
+
+        Syntax: white-space: normal or nowrap;
+        - normal: the remaining text goes down when the width is completed.
+        - nowrap: the remaining text continue directly outside the width and doesn't go down.
+    
+    (**) Word Break: /* organize how the text go down when the width ends */
+
+        Syntax: break-word or break-all;
+        - break-all: makes the all text to be cut equally.
+        - break-word: breaks the text when it is about to be overflow and doesn't care for the equallity.
+        -> NOTE: usually used when dealing with links.
+    
+    (**) Text Overflow: /* used to put 3 dotts when the text is extra the width */
+
+        Syntax: text-overflow: ellipsis;
+----------------------------------------------------------------------------------------------------------------------------
+(***) Inheritance:
+        /* The nested elements like <p> inside <div> or <div> inside <body> and so on will inherit the logical properties from
+            their father like text-align or font-size and more properties that won't ruin the design but you can change 
+            the properties for the desired element separetly rather than changing all without using Inheritance */
+
+        -> But you can decide which element inherits and inherits what like this example:
+
+        HTML:
+        <div>
+            <p>Welcome To The Website</p>
+        </div>
+
+        CSS:
+        div {
+            text-align: center;
+            padding: 20px;
+            background-color: #EEE;
+            font-size: 20px;
+            border: 2px solid blue;
+        }
+
+        div p {
+            border: 2px solid;
+            border-color: inherit;
+            padding: inherit;
+        }
+
+        NOTE: the p inside the div inherit the padding and border-color from the father div.
+----------------------------------------------------------------------------------------------------------------------------
+(***) Typography:
+
+    (**) Font Family: Watch the video it's downloaded :)
+    (**) Font Size And CSS Units: Watch the video it's downloaded :)
+    (**) Font Style: /* Changes the font style and it's not used much */
+
+        Syntax: font-style: italic or oblique or normal;
+
+    (**) Font Variant: /* makes the font smaller than normal and it's rarly used */
+
+        Syntax: font-variant: small-cpas;
+    
+    (**) Font Weight: /* controlls the bold of the font */
+        
+        Syntax: font-weight: bold or bolder or lighter or normal or "from 100 to 900";
+----------------------------------------------------------------------------------------------------------------------------
+(***) Mouse Cursor: /* controlls the shape of the mouse for the selected element */
+
+      Syntax: cursor: pointer or grab or move or many more you can find in CSS/Pics;
+----------------------------------------------------------------------------------------------------------------------------
+(***) Float & Clear: Watch the video it's downloaded :)
+----------------------------------------------------------------------------------------------------------------------------
+(***) CSS Calculation: Watch the video it's downloaded :)
+----------------------------------------------------------------------------------------------------------------------------
+(***) Opacity: /* like the alpaha in background-color property but it's doesn't controll the background-color clearness only
+                but also the content on this background */
+
+                Syntax: opacity: from 0.1 to 1; /* the 1 is the most clear or the normal but the 0.1 is the least clearness */
+----------------------------------------------------------------------------------------------------------------------------
+(***) Position: Watch the video it's downloaded :)
+      NOTE: the directions values (top, right, bottom, left) doesn't work until the position value is written
+      EX: 
+        div {
+            position: relative;
+            top: 20px;
+        }
+----------------------------------------------------------------------------------------------------------------------------
+(***) Z-index: /* used to controll which element become above the others and it doesn't work until the position is written */
+      
+      EX: if you have 3 divs and the position of them all is absolute then they all become above the eachother but in which 
+          order ? 
+
+        HTML:
+            <div>one</div>
+            <div>two</div>
+            <div>three</div>
+
+            the three will be above them all because it's the last one but what if you want to change that ?
+            then you should type a bigger z-index  to the element you want to be the first 
+
+        HTML:
+            <div class="d1">one</div>
+            <div class="d2">two</div>
+            <div class="d3">three</div>      
+
+        CSS:
+            .d1 {
+                position: absolute;
+                z-index: 3;
+            }
+
+            .d2 {
+                position: absolute;
+                z-index: 2;
+            }
+
+            .d3 {
+                position: absolute;
+                z-index: 1;
+            }
+
+        Here the d1 div will be above the d2 and d3 because it has the biggest z-index but without the z-index it will be the
+        last according to its order in the html code and note that you can use any numbers not just 1,2,3 the most important
+        is that the element you want to be first give it a bigger z-index value.
+
+        NOTES:
+            (1) this property is used when you want an element to be above all like nav par or any element then you give it a very
+                big z-index like 1000 for example to be above all and the same if you want an element to be under all then give it 
+                a -1 or any negative value.
+
+            (2) you can just type a z-index value for the one you want first and don't give the rest any value.
+
+            (3) what if you gave two elements the same z-inex value? then the html order will be restored.
+----------------------------------------------------------------------------------------------------------------------------
+(***) List Styling:
+
+        - list-style-type: disc; /* this is the bullets before the list you can change them as you want search google for them */
+
+        - list-style-position: inside or outside; /* this is used if you want to style the bullets before the <li> items
+          separetly or along with the <li> items themselves.
+
+        - list-style-image: url(the link of the image); /* this is used to put an image as a bullet before the <li> items */
+
+        - shortage code:
+                list-style: type position image;
+                
+        EX:
+
+            ul {
+                list-style-type: disc;
+                list-style-position: inside or outside;
+                list-style-image: url(the link of the image);
+                list-style: type position image;
+            }
+
+        NOTE: all of the Above is rarly used and here is the most used of all of this property:
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        And this is used to reset the list items and make them under each other to adjust them then by CSS and this way is 
+        most used for the navigation par.
+---------------------------------------------------------------------------------------------------------------------------- 
+(***) Table Styling: Watch the video it's downloaded.
+----------------------------------------------------------------------------------------------------------------------------
+(***) Pseudo Classes: /* controlls what happens in a certain action */
+        Syntax:
+            element:Pseudo Class {
+                what to do;
+            }
+
+        -> EX: 
+            a:hover {
+                color: red;
+            } /* in this example the color of the link will be cahnged to red when you stand on it with the mouse */
+
+        -> EX: 
+            a:visited {
+                color: blue;
+            } /* in this example the color of the link will be changed to blue when it's visited */
+
+        -> EX:
+            HTML:
+                <form action="">
+                    <div>
+                        <input class="in" type="text" />
+                    </div>
+                    <div>
+                        <input class="ch" type="checkbox" />
+                        <label for="">Testing Check</label>
+                    </div>
+                </form>
+            
+            CSS:
+                ch:checked {
+                    display: none;
+                } /* in this example the option of checkbox will be disappear when it's checked */
+
+                .in:focus {
+                    border-color: red;
+                } /* in this example the color of the wext border will be changed to red when it is in focus */
+
+            NOTES:
+            (1) you can use the Pseudo Classes alone without any element but for all elements which share a common property.
+
+            -> EX: 
+                :empty {
+                    border: 10px solid red;
+                } /* in this example any empty element will have a red 10px border */
+
+            (2) there are many many Pseudo Classes you can google them.
+            (3) you can test your work in the inspect page by selecting element then right click force state then select 
+                what you want.
+----------------------------------------------------------------------------------------------------------------------------
+(***) Pseudo Elements:
+        Syntax:
+            element::Pseudo element {
+                what to do;
+            }
+
+        -> EX:
+
+            div::first-letter {
+                display: inline-block;
+                color: rgb(0, 0, 0);
+                font-size: 60px;
+                font-weight: bold;
+            } /* in this example the first letter of the paragraph alone will be with those properties or any you choose */
+
+            .div::first-line {
+                font-weight: bold;
+                color: green;
+            } /* in this example the first line of the paragraph alone will be with those properties or any you choose */
+
+            ::selection {
+                background-color: black;
+                color: yellow;
+            } /* in this example the selected elements in the page will have a black background and yellow content when selected
+              with mouse and not like normal which is a blue background and white content because that may look bad with the site
+              design and you can make these properties for certain element just like the following example */
+
+              -> EX: 
+                div::selection {
+                    background-color: black;
+                    color: yellow;
+                }
+
+            NOTE: there are many many Pseudo Elements you can google them.
+----------------------------------------------------------------------------------------------------------------------------
+(***) Pseudo Elements – Before, After, Content: Watch the videos it's downloaded.
+----------------------------------------------------------------------------------------------------------------------------
+(***) Vendor Prefixes: /* used to make sure that the feature is supported by most browsers */
+        EX:
+            div {
+                -webkit-border-radius: 10px /* webkit stands for "chrome, safari, new opera versions" */
+                -moz-radius: 10px /* moz stands for "fire fox mozella" */
+                -ms-border-radius: 10px /* ms stands for microsoft browsers like "IE, Edge"
+                -o-border-radius: 10px /* o stands for "old opera versions" */
+            }
+
+        but how do you know if the feature is supported or not ? 
+        by using sites like can i use or vs extinsions which help with that.
+        NOTE: don't worry about that too much because most people now use modern browsers which support any feature.
+----------------------------------------------------------------------------------------------------------------------------
+(***) Border Radius: 
+        Syntax: it takes 4 values just like border, margin, padding but they're a little different which is : 
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+
+        and the short code is border-radius: 10px;
+        NOTES:
+        (1) the one property accepts 2 values just like the short code or each one separetly which is like:
+            border-radius: 10px 10px; and each value controlls one side of the edge but this is not used much.
+
+        (2) the border-radius is mostly used for buttons and product viewing.
+        (3) you can make a circle shape if the hight and width of the element is the same by making the border-radius
+            50% or half of the hight or width value.
+---------------------------------------------------------------------------------------------------------------------------- 
+(***) Box Shadow:
+        Syntax: 
+            box-shadow: H-Shadow V-Shadow Blur Spread Color Inset;
+            /* H stands for horizontal which is like on X axis, V is for Vertical which is like on Y sahdow, inset which
+            is if you want the shadow to be inside the box but if you want it to be outside which is the normal thing you
+            don't type any thing in the inset position */
+
+        EX: box-shadow: 10px 10px 2px 5px black;
+
+        NOTE:
+
+        (1) the box shadow is mostly used in any website and you will use it much but it needs to be professional with it.
+        (2) you can use more than one shadow in the same element by using this formula:
+
+            box-shadow: 10px 10px 2px 5px black, 10px 10px 2px 5px black, 10px 10px 2px 5px black, and so on;
+----------------------------------------------------------------------------------------------------------------------------
+(***) Box Model and Box Sizing:
+        Syntax: 
+            box-sizing: border-box;
+        
+        NOTES:
+        (1) used to make the browser respect the width and hight of the element even when adding border, margin, padding 
+            the width or height value remain as it is.
+
+        (2) the default value is box-sizing: content-box; but this is the normal one which adds the padding, border, margin
+            values along with the width value.
+
+        (3) you won't type this property for each element separetly but you will type it for all elements at once in the 
+            begining of the css script just like:
+
+            * {
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+----------------------------------------------------------------------------------------------------------------------------
+(***) Transition: /* controlls how the action will happen on element when standing on it with mouse meaning that you must 
+                     have a pseudo calss like hover to apply on */
+
+        Syntax:
+            - transition-duration: 1s=1000ms /* controlls how long the action will take */
+            - transition-delay: 0.5s=500ms /* controlls how long standing with mouse before acting */
+            - transition-property: particular property or the default value "all" /* controlls which property exactly
+            will act when standing with mouse */
+            - transition-timing-function: ease or linear or many more /* conrolls the way the act will happen */
+
+        Short code:
+            transition: transition-property transition-duration transition-timing-function transition-delay;
+
+        EX:
+            .one:hover {
+                width: 280px;
+                height: 120px;
+            }
+
+            .one {
+                background-color: #EEE;
+                width: 200px;
+                height: 100px;
+                transition-duration: 2s;
+                transition-delay: 0.5s;
+                transition-property: width;
+                transition-timing-function: ease;
+                OR
+                transition: width 2s ease 0.5s ;
+            }
+            
+
+        NOTES: 
+        (1) you can type many properties in one short code like:
+        EX: 
+            transition: width 2s linear, height 3s ease, and so on;
+
+        (2) you can type many properties in the normal code as well:
+        EX:
+            .one {
+                background-color: #EEE;
+                width: 200px;
+                height: 100px;
+                transition-duration: 1s, 2s; /* means 1s for width and 2s for height or if you just typed one value it'll be for both */
+                transition-delay: 0s;
+                transition-property: width, height;
+                transition-timing-function: ease;
+            }
+
+        ALSO WATCH THE VIDEO IT'S IMPORTANT AND DOWNLOADED :)
+----------------------------------------------------------------------------------------------------------------------------
+(***) Important Declaration: /* used to overwrite anything even in the HTML style code itself which is the strongest code
+      but the important is the most most strong over all */
+        Syntax:
+
+            .one {
+            background-color: #EEE !important; /* you just type word !important after the property you want to overwrite */
+            }
+
+        NOTE: you will only use the important declaration if you work on other engineers programs which you don't have access
+              to thier html or css or js code at all or just one of them.
+----------------------------------------------------------------------------------------------------------------------------
+(***) Margin Collapse:
+
+        - Only Vertical Margin Collapse /* Vertical is like on Y axis */
+        - Bigger Margin Wins /* means that if there're two elements one with margin 40 and the  other with margin 20 the 40 contain the 20 */
+        - Margin Collapsing With Elements Without Anything Between /* means nothing separetes them like <hr> for example */
+        - Nesting Does Not Prevent Collapse /* means if there're div under other div but the second div contain another div
+          then if the div inside the parent has margin then the other div under parent doesn't affected and Collapse normally */
+
+        NOTE: WATCH THE VIDEO IT'S DOWNLOADED :)
+----------------------------------------------------------------------------------------------------------------------------
+(***) Variables:
+        Syntax:
+
+            element or .class {
+                var(Variable Name, Fall Back Value) /* the fall back value is written because if any thing happens in the 
+            variable name it'll be a replacement */
+            }
+
+        There're two kinds of variables which is: 
+        - Global Variable /* Written in the root of the page just like:
+            :root {
+            --mainColor: blue;
+            }
+            and then you can use it in any element or class in the whole system like this example:
+
+            .main {
+            background-color: var(--mainColor, black); /* the black value is just like a replacement if anything wrong happened with
+            the variable */ 
+            color: white;
+            padding: calc(20px + var(--mainPadding)); /* note you can use the variable in calculations and other operations */
+            }
+
+        - Local Variable /* which is visable only in a separete element or class you decide */
+
+        EX: 
+            .class {
+            --mainColor: black;
+            background-color: var(--mainColor);
+            color: white;
+            } 
+----------------------------------------------------------------------------------------------------------------------------
+(***) Flexible Box:
+
+        (*) Properties for the parent element which contains other elements:
+            (1) display: flex; /* to make the parent a flex box or apply the flex property */
+            NOTE: display: inline-flex; /* this property is used when there's another element you want it to be next to the 
+            flex-box in the same line */
+
+            (2) flex-direction: row / row-reverse / column / column-reverse; 
+            /* row is the default value and it means to view elements in a row according to the whole page direction 
+            which is ltr (english) or rtl (arabic) / row-reverse used when you want to control the elements 
+            direction (revercing them) without any respect to the page direction / the column and column-reverse are quite
+            the same but the viewing is in a column instead in a row */
+
+            (3) flex-wrap: nowrap / wrap / wrap-reverse; /* nowrap is the default value and it makes the elements to be in the 
+            same line and overrides anything to make this happen / the wrap value makes the elements go down normally without 
+            overriding anything / the wrap-reverse makes the additional element go above the line and not under
+            (in row & row-reverse cases) and before the line and not after (in the column and column-reverse cases) */
+
+            (4) There's a shorthand for the flex-direction and flex-wrap which is flex-flow: flex-direction flex-wrap;
+            EX: flex-flow: row wrap; 
+
+            (5) Justify-content (WORKS ON HORIZONTAL [X]): flex-start / flex-end / center / space-between / space-around / space-evenly; 
+            /* flex-start is the default value and it makes the content position to be in the start wheather as it is or 
+            any additional new elements to be down and at start of the flex box / the flex-end is the opposite as it makes 
+            the elements to be at the end of the flex box / the ceter value arranges the elements to be in the center of 
+            the flex box / space-between adjust the space between elements according to the remaining width / space-around
+            uses the remaining width as spaces before and after the elements / space-evenly combines the space-between and 
+            space-around as it uses the remaining width as spaces between and before and after the elements */
+
+            (6) align-items (WORKS ON VERTICAL [Y]): stretch / flex-start / flex-end / center;
+            /* strech is the default value and it makes the elements stretch to fit the flex box / flex-start makes the elements 
+            in the start of the flex-box / flex-end makes the elements in the end of the flex-box / center makes the elements 
+            in the center of the flex box */
+
+            NOTE: when the flex direction is a column, justify-content changes to the vertical and align-items to the horizontal.
+
+            (7) align-content (DEALS WITH THE CONTENT AS A BLOCK): stretch / flex-start / flex-end / center / space-between / space-around / space-evenly;
+            /* same as align-items and justify-content but with the whole content like lines of elements */
+
+            NOTE: align-content property needs the flex-wrap value to be WRAP;
+
+        (*) Properties for the child element:
+
+    (1) flex-grow: from 0 to whatever you want; /* 0 is the default value and this property makes the element grow larger than 
+    other elements with the ratio you gave it if there is space for that */
+
+    (2) flex-shrink: from 1 to whatever you want; /* 1 is the default value and this property makes the element shrinks more than 
+    other elements with the ratio you gave it if there is no space for it */
+
+    (3) order: from 0 to any number you want; /* 0 is the default value and this property is responsible for the ordering elements 
+    like if you want an element to be at first you give it smaller order value and if you want it to be at the end you give
+    it larger order value and so on and if you want anything to be first you give it a negative value */
+
+    (4) flex-basis: auto or px value or percent % value like 20px or 20%; /* auto is the default value and this property is just 
+    like the width property but it doesn't control the width only but the height too when the flex- direction is in column, and this 
+    property doesn't have any effect on the elements with absolute position */
+
+    also this property respect the max-width / min-width properties, and it work with them for example:
+
+    div {
+        min-width: 300px;
+        flex-basis: 100px;
+    }
+    
+    so the min-width is actually works as a lower limit for flex basis.
+
+    div {
+        max-width: 100px;
+        flex-basis: 400px;
+    }
+
+    so the max-width is actually works as a upper limit for flex basis.
+    
+    (5) there's a shorthand code for flex-grow / flex-shrink / flex-basis properties and its syntax is:
+    flex: flex-grow flex-shrink flex-basis; and this property is very smart any value you type it will be understood in its best 
+    way for example if you typed 200px only it'll go to flex-basis and the other will remain with their own default values and 
+    so on with other values */ 
+
+    NOTE: there're 2 ready values for this shorthand which is (auto) "1 1 auto" and (none) " 0 0 auto" .
+
+    (6) align-self: auto or align-items values (strech / flex-start / flex-end / center); /* auto is the default value and 
+    it looks to the other elements and make the element like them but the property can change an element as separete from the 
+    other elements even if they are aligned different */
+----------------------------------------------------------------------------------------------------------------------------
+(***) Filters: 
+        
+        NOTES:
+        (1) before using the filter property you need to check caniuse site to know which browsers support it.
+        (2) there's a big list of filters you can google them or just watch them in the Visual Studio Code.  
+
+    (*) Some of filter types: 
+
+    (1) filter: grayscale(from 0 to 100%); /* makes the picture or element in white and black */
+    (2) filter: blur(value in pixels); /* makes hhe picture or element blur */
+    (3) filter: invert(from 0 to 100%); /* makes the picture or element inverted */
+
+
+    EX: 
+
+    img {
+        transition: 3s;
+        filter: grayscale(100%)
+    } 
+
+    img:hover {
+        filter: grayscale(0);
+    }
+
+    /* in this example the image is in balck and white once you hover on it it will become normal again */
+----------------------------------------------------------------------------------------------------------------------------
+(***) Gradients: 
+        Syntax: 
+            background-image: linear-gradient(direction or angle in deg, color 1, color 2, color 3, and so on);
+
+        Notice that you can set a start and end point for each color like this:
+        background-image: linear-gradient(
+            direction or angle in deg,
+            color 1,
+            color 1 stop point in percent or pixels,
+            color 2 start point which is the end point for color 1,
+            color 2 stop point,
+            color 3 start point which is the end point for color 2,
+            color 3 stop point,
+            color 4 start point which is the end point for color 3,
+            color 4 stop point,
+            color 5 start point to the end,
+            );
+
+            EX: 
+                background-image: linear-gradient(
+                to right,
+                #2980b9 20%,
+                #27ae60 20%,
+                #27ae60 40%,
+                #d35400 40%,
+                #d35400 60%,
+                #8e44ad 60%,
+                #8e44ad 80%,
+                #c0392b 80%
+            );
+
+        NOTE: This property most use is as a pseudo border for the element WATCH THE VIDEO TO SEE IT IT'S DOWNLOADED.
+----------------------------------------------------------------------------------------------------------------------------
+(***) Caret Color: /* changes the color of the edit pointer */
+        Syntax: caret-color: color;
+----------------------------------------------------------------------------------------------------------------------------
+(***) Pointer Events: /* controlls what happen when mouse hover or click on the element */
+        Syntax: pointer-events: the event you want to happen from the events list;
+
+    Note: most using of this property is this:
+
+        pointer-event: none; /* and this is used to cancel any action or event on the element and most used with JS */
+----------------------------------------------------------------------------------------------------------------------------
+(***) Grid: 
+        (*) Properties for the parent element which contains other elements:
+            (1) display: grid; /* to make the parent a grid or apply the grid system */
+            NOTE: display: inline-grid; /* this property is used when there's another element you want it to be next to the 
+            grid in the same line */
+
+            (2) grid-template-columns: [number of columns] in [px, %, auto, repeat(num of columns, in which unit), mix ];
+             /* arranges the columns in the grid system */
+
+            EX:
+
+            - grid-template-columns: 100px 100px 100px 200px; /* this means 4 columns with their given sizes*/ 
+            - grid-template-columns: 25% 50% 25%; /* this means 3 columns with their given sizes */ 
+            - grid-template-columns: auto auto auto auto; /* this means 4 columns with the same size */ 
+            - grid-template-columns: repeat(auto, 4); /* this means 4 columns with the same size */ 
+            - grid-template-columns: 100px 25% repeat(2, 100px) auto; /* this means 4 columns with different sizes and units */ 
+            - grid-template-columns: auto auto 1fr 2fr; /* this means 4 columns the auto will take just as it's content size
+            but the fraction will take the remaining in 3 parts for example if the remaining is 600px then the 1fr gets 200px
+            and the 2fr gets 400px */ 
+            - grid-template-columns: repeat(2, auto) repeat(2, 1fr); /* 4 columns 2 auto and 2 fraction */  
+
+            (2) grid-template-rows: [number of rows] in [px, %, auto, repeat(num of rows, in which unit), mix ];
+             /* arranges the rows in the grid system */
+
+             EX:
+             - grid-template-rows: repeat(3, 1fr);
+             - the rest of examples is just like the columns
+
+            (3) grid-template: is a shorthand property that combines grid-template-rows and grid-template-columns.
+                For example, grid-template: 50% 50% / 200px; 
+                will create a grid with two rows that are 50% each, and one column that is 200 pixels wide.
+
+            (4) row-gap & column-gap : /* controlls the gap between rows and columns */
+
+            EX: row-gap: 10px;
+                column-gap: 10px;
+
+            NOTE: the shorthand for both is "gap: row-gap-value column-gap-value ;"
+            EX:  gap: 10px 10px;
+
+            (5) Justify Content and Align content: exactly like the flex box or you can watch the grid video for more.
+            (6) grid-template-area(parent) & grid-area(child): Watch the video.
+        
+        (*) Properties for the child element:
+
+            (1) grid-column: start / end; /* grid-column is a shorthand for grid-column-start and grid-column-end and this 
+            property controlls how many columns will the element take from the grid columns */
+
+            EX: 
+                grid-column: 1 / 5; /* this means that it will take 4 column cells because the last is just a breakpoint 
+                and not counted in the taken cells or you can just count it 5-1=4 column cells :) and that is a programming
+                concept by the way */   
+
+            but what if you don't know the end point ? then you should type:
+            grid-column: span value;
+
+            EX: 
+                grid-column: span 4; /* this will make the element take just 4 cells from its position without ruining the
+                grid design at all */
+
+            What if you want the element to start from another position that's different from its own?
+
+            EX: for the first element
+                grid-column: 2 / span 5; /* this will make the element start from position 2 and take 3 cells */ 
+
+            (2) grid-row: ; /* just the same as grid-column but deals with the rows instead of the columns */
+
+            (3) grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end; /* this is another use for the grid-area
+            property beside its use to name the element area and this use is: to controll the position of the element anywhere
+            using just one line instead of four lines */
+
+            EX:
+                grid-area: 2 / 2 / 5 / 6; just same as: 
+
+                grid-row-start: 2;
+                grid-column-start: 2;
+                grid-row-end: 5;
+                grid-column-end: 6;
+
+            (4) Order: /* just like the order in the flex you give the element an order to controll its position greater numbers
+            in the back and smaller numbers in the front */
+
+        (*) Parent and child properties:
+
+            (1) minmax(minmum value, maximum value); /* used to controll the size of the column or row or element 
+            so the basic size will be the minimum value and if there's a remaining place it will take the maximum value*/
+            (2) autofill /* used in the grid-template-columns or grid-template-rows to fill the grid window automaticlly with
+            columns or rows */
+
+            EX:
+                grid-template-columns: repeat(auto-fill, min-max(200px, 1fr)); /* this line will automaticlly fill the grid
+                window with columns its minimum size is 200px and maximum size is 1fr */ 
+----------------------------------------------------------------------------------------------------------------------------
+(***) Transform:
+    (1) Scale: 
+            transform: scaleX(2); /* this will make the element stretch as twice of its size on the x axis */
+            transform: scaleY(2); / this will make the element stretch as twice of its size on the y axis */
+            /* you can type any value even negative values but what will happen then? */
+
+            transform: scaleX(-1); /* this will make the element flip on the x axis */
+            transform: scaleY(-1); /* this will make the element flip on the y axis */
+
+            there's a shorthand for the scaleX and scaleY which is :
+            scale(xvalue, yvalue)
+            EX:
+                transform: scale(2, 2); /* it will make the element stretch as twice of its size on the x axis and y axis, notice that 
+                if the y value is just like the x value then you don't have to type it and it will take it from the first value
+                just like transform: scale(2); = transform: scale(2, 2);
+
+    (2) Rotate:
+            rotate(deg value / rad / grad / turn);
+            EX:
+                transform: rotate(180deg); /* it'll make the element rotate 180deg from left to right and it's the same as transform: rotate(0.5turn) */
+                - if you used a negative value then it will make the element rotate form right to left.
+                - the degree is the most used unit.
+                - if you want to use more than one value in the transform what should you do?
+                EX:
+                    transform: scale(1.3) rotate(5deg); /* you type them after each other like this */
+    
+    (3) Translate:
+            transform: translate(xvalue, yvalue); /* used to move the element and controll its postition */
+            - if you type a negative value on xvalue it'll move from right to left.
+            - if you type a negative value on yvalue it'll move from bottom to top.
+            - you can type the translate individually like:
+            transform: translateX(); and transform: translateY();
+
+            Where can i use translate?
+            EX:
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) /* this is the most use and it's used to center the element in the page */
+
+    (**) 2D Transform:
+
+        (1) Skew: 
+                Syntax: transform: skew(deg value / rad / grad / turn);
+                transform: skewX(20deg); /* this will make the element skew by 20deg on the x axis */
+                transform: skewY(20deg); / this will make the element skew by 20deg on the y axis */
+                 /* you can type any value even negative values but what will happen then? */
+
+                transform: skewX(-20deg); /* this will make the element skew by -20deg on the x axis */
+                transform: skewY(-20deg); / this will make the element skew by -20deg on the y axis */
+
+                there's a shorthand for the skewX and skewY which is :
+                skew(xvalue, yvalue)
+
+            Where it's used? "we can use it on a before or after pseudo element to edit the original element background and make
+            it skew behind the element to look good, you can watch the skew video to see how :)"
+        
+        (2) Matrix: 
+                Syntax: transform: matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())
+                EX: transform: martrix(1, 0, 0, 1, 0, 0) /* this is the default values of the matrix */
+
+                NOTES:
+                - if you want to translate any deg to the format of the matrix just get the tan of the angle with degrees and put
+                its value in the matrix.
+                - you can but all the matrix values in the transform directly but you'll face one problem which is the functionality
+                order of the matrix is different from te transform becuse the matrix excute all the values at once but the transform
+                excute the translate values first so if you want the transform to be just like the matrix it must be in the following 
+                order:
+                    transform: translateX() translateY() scaleX() skewY() skewX() scaleY();
+        
+    (**) 3D Transform:
+
+        (1) Rotate
+            - transform: rotateX() /* rotate around x axis so on 90deg it'll be invisible and 180deg it'll be reversed */
+            - transform: rotateY() /* rotate around y axis so on 90deg it'll be invisible and 180deg it'll be reversed */
+            - transform: rotateZ() /* won't do anything and will act just like the rotate only on 2D transform unless it's on a 3D 
+            environment which is like the following */
+            - transform: rotate3d(x from 0 to 1, y from 0 to 1, z from 0 to 1, degrees)
+            EX: 
+                transform: rotate3d(0, 1, 1, 45deg)
+
+        (2) Translate:
+                You can type it individually like:
+                transform: translateX();
+                transform: translateY();
+                transform: translateZ();
+                Or you can use transform: translate3d(Xvalue, Yvalue, Zvalue);
+            NOTES:
+            - to make the translateZ work or the Zvalue in the translate3d you must set a prespective on the parent element that
+            contains the element you want to apply the translateZ property on, Example for that:
+
+            .parent {
+                prespective: 300px; /* this is the distance between you and the parent element */
+            }
+
+            .child {
+                transform: translate3d(0, 0, 100px); /* now the element will go farther because in the parent you stand on 300px 
+                but child is on 100px so when the distance of child is less than the prespective then the element will be smaller 
+                and when it's larger than the prespective then it'll disappear form the prespective basiclly meaning that if the 
+                translateZ value is 300px or larger then the element will disappear */
+            }
+
+        (3) Prespective-Origin: /* is just like the transform-origin which control from where the 3D transform will happen and this
+        property takes the same units as the transform-origin */
+
+        Syntax:
+            prespective-origin: (center or 50%, center or 50%); /* those're the default values and you can change them to controll
+            the origin of the 3d transform */
+
+        NOTES:
+        - this property is also put on the parent element that contains the element and doesn't work until the prespective property
+        is already on the parent element. 
+
+        (4) backface-visibility: visible or hidden; /* visible is the default value which make the rotated element normally appear
+        when its rotateX or RotateY is 90deg or more but the hidden hide it completly which is a MUST in the flip product example */
+
+        (5) transform-style: flat or preserve-3d; /* flat is the default value and it makes the element flat even if there is 
+        another element behind it but preserve-3d shows the other element behind when flip and notice that this property is put
+        on the parent element that contains the 2 elements in the flip */
+
+
+
+    (**) 2D & 3D properties:
+
+        (1) Transform Origin: /* the place from which the transform will happen */
+                Syntax: 
+                in 2D: transform-origin: (X, Y); 
+                in 3D: transform-origin: (X, Y, Z);
+
+                NOTES: 
+                - the units of X, Y, Z values can be css units[px, em, rem] or % or keywords like the following:
+                for X-axis:
+                left= 0%
+                center: 50%
+                right: 50%
+
+                but for Y-axis:
+                top= 0%
+                center: 50%
+                bottom: 50%
+
+    WATCH THE TRANSFORM VIDEOS FOR MORE.
+----------------------------------------------------------------------------------------------------------------------------
+(***) Animation:
+            - @keyframes animtion-name {
+                from or 0% {
+                    /* property you want to animate */
+                }
+                to or any percent for example 50% {
+                    /* property you want to animate */
+                }
+                any percent for example 75% {
+                    /* property you want to animate */
+                }
+                any percent for example 100% {
+                    /* property you want to animate */
+                }
+            }
+
+            - element {
+                (1) animation-name: /* name you choosed in the @keyframes */
+
+                (2) animation-duration: /* duration you set for the duration in which the animation will happen */
+
+                (3) animation-iteration-count: infinite or any number or forwards or backwards/* number of times the annimation will happen */
+                    >> forwards: makes the animation happen and stay at its last form.
+                    >> backwards: makes the animation happen and return to its initial form.
+                (4) animation-timing-function: ease or linear /* controlls the way the animation will happen */
+
+                (5) animation-direction: reverse or alternate or alternate-reverse or normal; /* controlls the direction of animation */
+                1- reverse: makes the animation reversed meaning from 100% to 0%.
+                2- alternate: makes the animation go forward then backward.
+                3- alternate-reverse: makes the animation go backward then forward.
+                4- normal: is the default value.
+
+                (6) animation-delay: any value with seconds or negative value /* controlls how long to wait before the animation happen
+                and the negative value means that the animation will be happened already by this value then continue after it */
+
+                (7) animation-fill-mode: forwards or backwards or both; /* makes the element takes its style from the last keyframes
+                and the last keyframe depends on the direction of the animation wheather it's normal or rverse but the best value
+                to use is both so it will take the style wheather the direction is normal or reverse it doesn't matter and this
+                property is not used much */ 
+
+                (8) animation-play-state: running or paused; /* used to controll the state of the animation for example */
+                div {
+                    animation-play-state: running;
+                }
+                div:hover {
+                    animation-play-state: paused;
+                }
+                so the use of this property is to allow user to stop animation when hover on it.
+
+                animation shorthand:
+                animation:  animation-name
+                            animation-duration
+                            animation-timing-function
+                            animation-delay
+                            animation-iteration-count
+                            animation-direction
+                            animation-fill-mode
+                            animation-play-state
+                            
+                NOTE: you will use this shorthand only if you want to use all the animation properties.
+            }
+
+            NOTES:
+            - @keyframes is written at any place in the css code but the animation-name and animation-duration is written on the 
+            element you want to animate.
+            - to get a good animation you need to notice the duration and the states in the @keyframes for example if you have 3 states 
+            in the keyframes then the animation-duration better to be 3s so 1s for each state.
+            - if you will animate the element from his default state to another then you don't have to type the state "to or 0%"
+            you will start from "from" directly.
+
+            WATCH THE VIDEOS IT'S IMPORTANT ESPESIALLY THE LAST ONE. 
+----------------------------------------------------------------------------------------------------------------------------
+(***) Selectors: 
+        1- * : Targets the whole page.
+
+        2- element directly: Targets any element in the page of that type.
+        EX:
+        p {
+            /* targets all paragraphs in the page */
+        }
+
+        3- element other-element: Targets the other-element inside that element wheather or not there're another elements in that 
+        element.
+        EX:
+        div p {
+           /* targets all paragraphs inside a div wheather there're another elements beside the paragraph in the div */
+        }
+
+        4- .class-name: Targets any element with this classname.
+        EX:
+        .parent {
+            /* targets all elements with class parent */
+        }
+
+        5- #id-name: Targets all elements with this id-name.
+        EX:
+        #parent {
+            /* targets any element with id parent */
+        }
+
+        6- .class .another-class: Targets an element with another-class inside another element with class.
+        EX:
+        .parent .child {
+            /* targets the element with class child inside another element with class parent */
+        } 
+
+        7- .class-one.class-two: Targets an element with those classes.
+        EX:
+        .one.two {
+            /* targets an element with class="one two" */
+        }
+
+        8- .class element: targets element inside another element with this class.
+        EX 1:
+        .parent div {
+            /* targets any div inside any element with class parent wheather or not there're other elements beside the div */
+        }
+
+        EX 2:
+        .parent div, .parent p {
+            /* this is a grouping targets any div or paragraph inside an element with class parent */
+        }
+
+        9- element.class-name: targets all elements of this type only with that class.
+        EX:
+        p.one {
+            /* targets all paragraphs only with this class */
+        } 
+
+        10- .parent > .child: Targets a direct child inside a parent and the child can't be inside another element which inside
+        the parent.
+        EX:
+        HTML SCRIPT:
+        <div class="parent">
+            <p class="child"></p>
+        </div>
+        CSS SCRIPT:
+        .parent > .child {
+            the properties
+        }
+
+        notice it can't be like :
+
+        HTML SCRIPT:
+        <div class="parent">
+            <div>
+                <p class="child"></p>
+            </div>
+        </div>
+        CSS SCRIPT:
+        .parent > .child {
+            the properties
+        }
+
+        because the direct element is directly inside the parent and not in another element inside the parent.
+---------------------------------------------------------------------
+
+        11- Element + Other Element: Targets the other element but it must have the element just before it.
+        EX:
+        HTML SCRIPT:
+        <div></div>
+        <p></p>
+        CSS SCRIPT:
+        div + p {
+            /* targets only any paragraph that has a div just before it */
+        }
+
+        12- Element ~ Other Elements: Targets other elements of the same given type after the element but they must be in the same
+        parent and not inside another elements in the parent.
+        EX:
+        HTML SCRIPT:
+        <div class="parent">
+            <p></p>
+            <div></div>
+            <div></div>
+            <h2></h2>
+            <div></div>
+            <p>
+                <div></div>
+            </p>
+        </div>
+        CSS SCRIPT:
+        p ~ div {
+            /* it will target all divs inside the parent but it will not target the div inside the p because it's not in the parent
+            directly but it's in anoter element inside the parent */
+        }
+
+        13- [Attribute]: Targets any element with this attribute.
+        EX:
+        [title] {
+            /* targets any element with attribute title */
+        }
+
+        14- Element[Attribute]: Targets any element of this type and with this attribute.
+        EX:
+        div[title] {
+            /* targets any div with the attribute title */
+        }
+
+        15- [Attribute=Value]: Targets any element with this attribute which has this exact value.
+        EX:
+        [title=t1] {
+            /* targets any element with title attribute which has the value t1 */
+        }
+
+        16- Element[Attribute=Value]: Targets any element of this type with this attribute which has this exact value.
+        EX:
+        div[title=t1] {
+            /* targets any div with title attribute which has the value t1 */
+        }
+
+        17- [Attribute~=value]: Targets any element with this attribute which its value contains the given word separetly.
+        EX:
+        HTML SCRIPT:
+        <div title="good book"></div>
+        <div title="bad book"></div>
+        <div title="mediumbook></div>
+        CSS SCRIPT:
+        [attribute~=book] {
+            /* targets the divs with the good and bad book attribute value because they have the word book separetly 
+            but it won't target the mediumbook div because the word book is now a part of the whole word and not a separete word*/
+        }
+
+        18- [Attribute*=value]: Targets any element with this attribute which its value contains the given word separetly or just
+        a part of anoter word.
+        EX:
+        HTML SCRIPT:
+        <div title="good book"></div>
+        <div title="bad book"></div>
+        <div title="mediumbook></div>
+        CSS SCRIPT:
+        [attribute~=book] {
+            /* targets the divs with the good and bad book and mediumbook attribute value because they just have the word book */
+        }
+
+        19- [Attribute^=value]: Targets any element with this attribute which its value starts with the given word separetly or just
+        a part of anoter word.
+        EX:
+        HTML SCRIPT:
+        <div title="good book"></div>
+        <div title="goodbad book"></div>
+        <div title="goodmediumbook></div>
+        CSS SCRIPT:
+        [attribute^=book] {
+            /* targets all the divs because they just start with the word good */
+        }
+---------------------------------------------------------------------
+        20- Element:first-child: Targets any element of this element type but it has to be the first child of his parent.
+        EX:
+        div:first-child {
+            /* this will target any div but it must be a first child in its parent */
+        }
+
+        21- Element:last-child: Targets any element of this element type but it has to be the last child of his parent.
+        EX:
+        div:last-child {
+            /* this will target any div but it must be a last child in its parent */
+        }
+
+        22- Element:first-of-type: Targets any element of this type but it must be the first of his type in its parent.
+        EX:
+        div:first-of-type {
+            /* this will target the first div in its parent only */
+        }
+
+        23- Element:last-of-type: Targets any element of this type but it must be the last of his type in its parent.
+        EX:
+        div:last-of-type {
+            /* this will target the last div in its parent only */
+        }
+
+        24- Element:only-child: Targets the element but it must be the only child in its parent.
+        EX:
+        div:only-child {
+            /* targets any div that is the only child in its parent */
+        }
+
+        25- Element:only-of-type: Targets the element but it must be the only child of its type in its parent.
+        EX:
+        div:only-of-type {
+            /* targets any div that is the only one in its parent */
+        }
+---------------------------------------------------------------------
+        26- Element:not(target): targets all elements from the element type except the targted one wheather it's element or class or
+        any selector.
+        EX:
+        p:not(:first-child) {
+            /* this will target all paragraphs except if there's a paragraph that's a first child it'll not be targted */
+        }
+
+        27- Element:nth-child(number or even or odd or n+number or -n+number or many more): Targets the element if it is a child 
+        with this number in its parent.
+        EX:
+        p:nth-child(2) {
+            /* targets paragraph if it is the second child in its parent */
+        } 
+
+        28- Element:nth-last-child(number or even or odd or n+number or -n+number or many more): Targets the element if it is a child 
+        with this number in its parent.
+        EX:
+        p:nth-child(2) {
+            /* targets paragraph if it is the one before the last child in its parent */
+        } 
+
+        29- Element:nth-of-type(number or even or odd or n+number or -n+number or many more): Targets the element of this type with 
+        this number.
+        EX:
+        p:nth-of-type(3) {
+            /* targets the third Paragraph in its parent */
+        }
+
+        30- Element:nth-last-of-type(number or even or odd or n+number or -n+number or many more): Targets the element of this type with 
+        this number but count backwards.
+        EX:
+        p:nth-last-of-type(3) {
+            /* targets the third Paragraph from the back in its parent */
+        }
+---------------------------------------------------------------------
+        31- :root: targets all elements in the page
+        EX:
+        :root {
+            /* properties */
+        }
+
+        32- Element:checked or :checked: targets any checked element or with attribute checked.
+        EX:
+        input[type="checkbox"]:checked + label {
+            color: red; /* this code will target the label which of course has the input checked just before so when we click it
+            and it's checked its color becomes red */
+        }
+
+        33- Element:empty or :empty: targets the element if it's empty or if just :empty then it'll target any empty element.
+        EX:
+        div:empty {
+            background-color: red; /* this will make any empty div background red */
+        }
+
+        34- Element:disabled or :disabled: targets the element if it's disabled or if just :disabled then it'll target any 
+        element with disabled attribute.
+        EX:
+        input:disabled {
+            opacity: .5; /* this will make any element with disabled attribute opacity .5 */
+        }
+
+        35- Element:required or :required: targets element with attribute required or if just :required then targets any element with
+        required attribute.
+        EX:
+        input:required {
+            background-color: red; /* this will make any input with required attribute background red */
+        }
+
+        36- Element:focus or :focus: targets element when focus and if just :docus then targets any element when focus.
+        EX:
+        input:focus {
+            background-color: red; /* this will make any input background red when focused*/
+        }
+
+        37- Element::selection or ::selection: targets the element when selected or if just ::selection then targets all elements when 
+        selected.
+        EX:
+        div::selection {
+            background-color: black;
+            color: white
+        } /* this will target any div when selected */
+
+        38- Element::placeholder or ::placeholder: targets the element with attribute placeholder or if just ::placeholder then
+        targets all elements with attribute placeholder.
+        EX:
+        .one::plceholder {
+            color: red; /* targets the element with class one and placeholder attribute */
+        }
+
+        WATCH THE SELECTORS VIDEOS FOR MORE AND CHECK THE REFRENCE EITHER.
+----------------------------------------------------------------------------------------------------------------------------
+(***) Media Queries and Responsive Design:
+    Syntax:
+        @media (condition) and (condition) or just one condition {
+            elements and their properties;
+        }
+
+    EX:
+        div {
+            background-color: red;
+        }
+
+        @media (min-width: 1000px) and (max-width: 1500px) {
+            div {
+                background-color: black;
+            }
+        } /* this means that from range 1000px to 1500px the bacground color of the div will become black rather than red;
+    EX2:
+        div {
+            background-color: red;
+        }
+
+        @media print {
+            div {
+                background-color: black;
+            }
+        } /* this means that when the user prints the page the bacground color of the div will become black rather than red;
+
+    HOW TO USE:
+    1- you can make a whole file just for the media and its conditions and target the file in the HTML code:
+    <link rel="stylesheet href="location" media="condition, for example print" /> and so this file will be applied only when 
+    the user print the page.
+
+    2- you can type the word media="condition" in HTML style code:
+    <style media="condition, for example print >
+        elements and their properties;
+        for example:
+        div {
+            color: red;
+        }
+    </style>
+
+    3- you can just type the CSS code @media as in the syntax above and this is the best practise.
+
+    NOTES:
+    1- There's a meta used when dealing with a responsive website just type meta:vp then press tap and it will be:
+    <meta name="viewport" content="width=device-width", initial-scale=1.0">
+
+    The Standard Media Queries:
+        /* Mobile */
+
+        @media (max-width: 767px) {
+        }
+
+        /* Small Screens */
+
+        @media (min-width: 768px) and (max-width: 991px) {
+        }
+
+        /* Medium Screens */
+
+        @media (min-width: 992px) {
+        }
+
+        /* Large Screens */
+
+        @media (min-width: 1200px) {
+        }
+
+    ALSO WATCH THE MEDIA QUERIES VIDEOS FOR MORE ESSPICIALLY THE LAST ONE.
+----------------------------------------------------------------------------------------------------------------------------
+(***) Framework: Used to save time during developing simply if you use some code lines in many places in the site for example
+if you make the whole site products in a circle shape then instead of using width, height and border radius each time you simply
+write them in a class then add this calss in the HTML code of the elements you desire to be circled.
+----------------------------------------------------------------------------------------------------------------------------
+(***) Global Values:
+
+    1- inherit: makes the element inherit its properties from its parent.
+    2- initial: return the element to its default values.
+    3- unset: return the element to its normal if it will inherit from its parent then this what will happen if not then
+    it returns the element to its default value (initial).
+    4- revert: return the element to the default browser properties.
+    5- all: this is used when there's a common property or properties among the whole page elements.
+
+    WATCH THE VIDEO FOR MORE EXPLAIN.
+----------------------------------------------------------------------------------------------------------------------------
