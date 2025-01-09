@@ -1,0 +1,2 @@
+- Before using any of the propertis listed in this directory search for it first at:
+  'https://caniuse.com/' like the screenshot attaced.

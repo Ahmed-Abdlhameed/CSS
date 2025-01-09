@@ -1,0 +1,5 @@
+.el {
+  background-color: #aaa;
+  width: 300px;
+  text-wrap: balance; /* makes a balance between lines if wrapped, remove it to see difference */
+}
