@@ -1,0 +1,67 @@
+:root {
+    --BackgroundColor: #ddd;
+    --padding: 10px;
+    --margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page {
+    background-color: #EEE;
+    overflow: visible;
+    padding: 2px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: var(--margin);
+}
+
+.logo, .links {
+    background-color: var(--BackgroundColor);
+    padding: var(--padding);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px; /* just an initial value then we make the links grow in the empty space by flex-grow */
+    height: 30px; 
+}
+
+.links {
+    list-style: none;
+    margin: 0; /* this is for just the ul because it has by default a margin check the css list style section */
+    flex-grow: 1;
+    justify-content: flex-end;
+    margin-left: var(--margin);
+}
+
+li {
+    padding: 0 10px;
+}
+
+.main-area {
+    display: flex;
+    justify-content: space-between;
+    margin: var(--margin);
+}
+
+.content, .sidebar {
+    background-color: var(--BackgroundColor);
+    padding: var(--padding);
+    display: flex;
+    height: 300px;
+    width: 270px; /* just an initial value then we make the content grow in the empty space by flex-grow */
+}
+
+.content {
+    flex-grow: 1;
+    margin-right: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--BackgroundColor);
+    padding: var(--padding);
+    margin: var(--margin);
+}

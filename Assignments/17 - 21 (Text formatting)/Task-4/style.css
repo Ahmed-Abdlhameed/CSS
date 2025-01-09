@@ -1,0 +1,13 @@
+a {
+    color: white;
+    background-color: darkcyan;
+    padding: 10px 20px;
+    margin: auto;
+    text-transform: capitalize;
+    display: block;
+    border-bottom: 8px solid #003300;
+    text-decoration: none;
+    text-align: center;
+    width: fit-content;
+  }
+  

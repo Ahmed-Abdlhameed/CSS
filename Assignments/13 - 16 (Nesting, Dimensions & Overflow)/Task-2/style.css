@@ -1,0 +1,13 @@
+.d1, .d2, .d3, .d4 {
+    background-color: rgba(165, 2, 2, 0.801);
+    width: fit-content;
+    max-width: 400px;
+    padding: 20px;
+    margin-bottom: 10px;
+    height: 20px;
+    color: azure;
+}
+
+.d4 {
+    overflow: hidden;
+}

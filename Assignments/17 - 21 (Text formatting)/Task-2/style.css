@@ -1,0 +1,11 @@
+.one {
+    text-transform: uppercase;
+}
+
+.two {
+    text-transform: capitalize;
+}
+
+.tree {
+    text-transform: lowercase;
+}

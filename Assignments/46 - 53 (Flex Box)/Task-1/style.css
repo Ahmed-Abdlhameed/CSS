@@ -1,0 +1,15 @@
+div {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    color: rgb(236, 106, 0);
+    background-color: #EEE;
+    border-right: 5px solid rgb(236, 106, 0);
+    border-left: 5px solid rgb(0, 140, 255);
+    border-radius: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}

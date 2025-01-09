@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid {
+  background-color: #ddd;
+  padding: 25px;
+  display: grid;
+  margin: auto;
+  gap: 5px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, auto);
+}
+
+.grid div {
+  padding: 20px;
+  border-bottom: 3px solid orangered;
+  position: relative;
+}
+
+.one {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.two {
+  grid-row: span 2;
+}
+
+.three {
+  grid-row: span 6;
+}
+
+.four {
+  grid-row: span 4;
+}
+
+.five, .six {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.seven, .eight, .nine, .ten {
+  grid-row: span 2;
+}
+
+span {
+  color: #a3a3a3;
+}
+
+.three, .five, .eight {
+  background-color: black;
+  color: white;
+}
+
+.one, .two, .four, .six, .seven, .nine, .ten {
+  background-color: white;
+  color: black;
+}
+
+.grid div::after {
+  content: "''";
+  font-size: 50px;
+  position: absolute;
+  bottom: -22px;
+  right: 15px;
+  letter-spacing: -1px;
+  transform: rotate(12deg);
+  color: #818181;
+}
