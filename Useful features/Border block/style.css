@@ -1,0 +1,26 @@
+.one {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin-bottom: 20px;
+  background-color: #eee;
+  writing-mode: vertical-lr;
+  font-size: 30px;
+}
+.two {
+  border-block: 2px solid black; /* a shorthand for the next comment*/
+  /* border-block-start-width: 2px;
+    border-block-end-width: 2px;
+    border-block-start-style: solid;
+    border-block-end-style: solid;
+    border-block-start-color: black;
+    border-block-end-color: black; */
+  font-size: 30px;
+  writing-mode: vertical-lr;
+}
+
+/*
+> Notes:
+- The difference between border & border-block is that: the border-block puts borders at 
+  start & end of the element so if the element is horizontal it will put borders on top & bottom
+  and if the element is vertical then it will put borders on right & left.
+*/
