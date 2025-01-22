@@ -1,0 +1,11 @@
+.parent {
+  color: green;
+  border: 2px solid currentColor; /* Takes it from the color property */
+  box-shadow: 2px 5px 10px currentColor; /* Takes it from the color property */
+}
+.parent .child {
+  color: black;
+  border: 2px dotted currentColor; /* Takes it from the nearest color property */
+}
+
+/* Note: if the child has no color property it'll take current color from parent */
