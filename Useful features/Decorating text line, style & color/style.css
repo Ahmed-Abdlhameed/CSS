@@ -1,0 +1,19 @@
+a {
+  text-decoration-line: overline; /* Making the link line on top */
+  text-decoration-style: wavy; /* Making the link line wavy */
+  text-decoration-color: green; /* Making the link line green */
+  color: green; /* Making the link itself green */
+}
+span {
+  text-decoration-line: underline; /* Making a line for the span on bottom */
+  text-decoration-style: dotted; /* Making the line dotted */
+  text-decoration-color: black; /* Making the line black */
+  color: black; /* Making the span itself black */
+}
+
+/* 
+> Notes:
+- The 'text-decoration' is a property for the 'a' element as it's the only element having
+  a line attaced with it like a decoration, but with the addons on this property we can 
+  use its styles for the normal text either.
+*/
