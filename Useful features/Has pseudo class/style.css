@@ -1,0 +1,20 @@
+/* Targeting the .parent element which has inside it element 'a' OR 'span' or both */
+/* .parent:has(a, span) {
+  border: 2px solid red;
+} */
+
+/* Targeting the .parent element which has inside it element 'a' AND 'span' together */
+.parent:has(a):has(span) {
+  border: 2px solid red;
+}
+
+/* Targeting the .parent element which has inside it an element with the attribute 'checkbox' 
+   and when it's checked it will be targetted */
+.row:has(:checked) {
+  border: 2px solid green;
+}
+
+/* Targeting the .parent element which comes after it element 'form' */
+.parent:has(+ form) {
+  background-color: #ddd;
+}
