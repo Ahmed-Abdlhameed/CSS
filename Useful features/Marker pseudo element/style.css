@@ -1,0 +1,45 @@
+ul {
+  /* list-style: none; */
+}
+ul li {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 10px;
+}
+
+/* Pseudo element with unicode method */
+/* ul li::before {
+  content: "\2022";
+  color: red;
+  display: inline-flex;
+  margin-right: 10px;
+} */
+
+/* Pseudo element with creating your own marker method */
+/* ul li::before {
+  content: "";
+  background-color: red;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-flex;
+  margin-right: 10px;
+} */
+
+/* Marker method (remove the list-style: none; on the ul for this method)*/
+ul li::marker {
+  content: "♠ "; /* You can put any character you want */
+  margin-right: 50px;
+  font-size: 20px;
+  color: red;
+  animation: zoomin 1s ease infinite;
+}
+
+@keyframes zoomin {
+  0%,
+  100% {
+    transform: scale(1.5);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
