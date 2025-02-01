@@ -1,0 +1,13 @@
+.parent {
+  color: red;
+  .child {
+    color: grey;
+    span {
+      color: green;
+      cursor: pointer;
+      &:hover {
+        font-weight: bold;
+      }
+    }
+  }
+}
