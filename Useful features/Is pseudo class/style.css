@@ -1,0 +1,22 @@
+/* Using grouping way */
+/* div a,
+div span,
+p a,
+p span,
+ul a,
+ul span {
+  color: red;
+} */
+
+/* Using is way */
+/* Targeting the elements (a, span) inside the elements (div, p, ul) */
+:is(div, p, ul) :is(a, span) {
+  color: red;
+}
+
+/* Targeting the elements (a, span, .test) inside the elements (div, p, ul) */
+:is(div, p, ul) :is(a, span, .test) {
+  color: red;
+}
+
+/* Notes: 'is' pseudo class does the same task as 'where' pseudo class */
