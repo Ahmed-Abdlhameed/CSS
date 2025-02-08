@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box; /* To make the browser not clculate border and padding width */
+}
+.box {
+  margin: 20px auto;
+  padding: 20px;
+  width: 400px;
+  background-color: #eee;
+  text-align: center;
+  border: 2px solid black;
+  outline: 2px solid green;
+  outline-offset: 2px; /* The empty space between the element and the outline */
+}
