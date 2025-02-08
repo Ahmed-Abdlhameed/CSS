@@ -1,0 +1,4 @@
+/* Targeting the 2nd element based on the box class */
+:nth-child(2 of .box) {
+  color: red;
+}
