@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 62px; /* The space beforer section when scrollling */
+}
+body {
+  margin: 0;
+}
+h3 {
+  margin: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  height: 62px;
+}
+h3 a {
+  color: white;
+}
+div {
+  height: 100vh;
+  padding: 20px;
+}
+.sec-1 {
+  padding-top: 82px; /* The space needed for the nav not covering section-1 */
+}
+.sec-2 {
+  background-color: #eee;
+}
+
+/* Notes: there's also scroll-margin & padding in general if needed */
