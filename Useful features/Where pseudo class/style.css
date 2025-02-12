@@ -1,0 +1,21 @@
+/* Normal way */
+h1 a,
+h1 span,
+div a,
+div span,
+p a,
+p span {
+  color: red;
+}
+
+/* Where way if targeting single child: where(parent elements) targrt child {properties}*/
+/* .parent :where(h1, div, p) a {
+  color: red;
+} */
+
+/* Where way if targeting multi children: where(parent elements) :where(target children) {properties}*/
+.parent :where(h1, div, p) :where(a, span) {
+  color: red;
+}
+
+/* Notes: 'where' pseudo class does the same task as 'is' pseudo class */
