@@ -1,0 +1,6 @@
+.cant-select {
+  user-select: none;
+}
+.all-select {
+  user-select: all; /* select all text when clicking on it */
+}
