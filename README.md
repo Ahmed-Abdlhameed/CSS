@@ -176,59 +176,59 @@ This repository contains a collection of notes, assignments and practice tasks t
 
 ## Useful features
 
-### Border block
+### - Border block
 - **Purpose**: This task focuses on working with the `border-block` property, which controls the top and bottom borders of a block-level element.
 - **Files**: [See feature files](Useful%20features/Border%20block)
 
-### Nth child of
+### - Nth child of
 - **Purpose**: This task involves understanding and using the `:nth-child()` pseudo-class to target specific child elements based on their position in the DOM.
 - **Files**: [See feature files](Useful%20features/Nth%20child%20of)
 
-### Nesting module
+### - Nesting module
 - **Purpose**: This task covers the use of CSS nesting, allowing styles to be scoped within a parent rule for better readability and organization.
 - **Files**: [See feature files](Useful%20features/Nesting%20module)
 
-### Is pseudo class
+### - Is pseudo class
 - **Purpose**: This task focuses on the new `:is()` pseudo-class, which allows multiple selectors to be grouped together to apply the same styles.
 - **Files**: [See feature files](Useful%20features/Is%20pseudo%20class)
 
-### Has pseudo class
+### - Has pseudo class
 - **Purpose**: This task explores the `:has()` pseudo-class, enabling a parent element to apply styles based on its children’s characteristics.
 - **Files**: [See feature files](Useful%20features/Has%20pseudo%20class)
 
-### Where pseudo class
+### - Where pseudo class
 - **Purpose**: This task delves into the `:where()` pseudo-class, providing a way to style elements with a lower specificity compared to `:is()`.
 - **Files**: [See feature files](Useful%20features/Where%20pseudo%20class)
 
-### Empty pseudo class
+### - Empty pseudo class
 - **Purpose**: This task focuses on the `:empty` pseudo-class, used to target elements that have no children (including text nodes).
 - **Files**: [See feature files](Useful%20features/Empty%20pseudo%20class)
 
-### Marker pseudo element
+### - Marker pseudo element
 - **Purpose**: This task explains the `::marker` pseudo-element, which allows you to style the marker (bullet or number) of list items.
 - **Files**: [See feature files](Useful%20features/Marker%20pseudo%20element)
 
-### Current color keyword
+### - Current color keyword
 - **Purpose**: This task explores the use of the `currentColor` keyword, which allows elements to inherit the current text color for other properties like borders.
 - **Files**: [See feature files](Useful%20features/Current%20color%20keyword)
 
-### Scroll padding and margin
+### - Scroll padding and margin
 - **Purpose**: This task focuses on the `scroll-padding` and `scroll-margin` properties, which control the space around elements during scrolling.
 - **Files**: [See feature files](Useful%20features/Scroll%20padding%20and%20margin)
 
-### Balanced text with text wrap
+### - Balanced text with text wrap
 - **Purpose**: This task explains how to achieve balanced text with proper wrapping, ensuring even spacing for better readability.
 - **Files**: [See feature files](Useful%20features/Balanced%20text%20with%20text%20wrap)
 
-### Outline offset and challenge
+### - Outline offset and challenge
 - **Purpose**: This task covers the `outline-offset` property, which shifts the outline away from the element’s border edge.
 - **Files**: [See feature files](Useful%20features/Outline%20offset%20&%20challenge)
 
-### Select all text with user select
+### - Select all text with user select
 - **Purpose**: This task involves using the `user-select` property to enable or disable text selection on elements.
 - **Files**: [See feature files](Useful%20features/Select%20all%20text%20with%20user%20select)
 
-### Decorating text line, style and color
+### - Decorating text line, style and color
 - **Purpose**: This task demonstrates how to style text decorations like underlines, strikethroughs, and overlines with different colors and line styles.
 - **Files**: [See feature files](Useful%20features/Decorating%20text%20line%2C%20style%20&%20color)
 
