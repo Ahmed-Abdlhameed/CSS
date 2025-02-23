@@ -176,9 +176,9 @@ This repository contains a collection of notes, assignments and practice tasks t
 
 ## Useful features
 
-### Border block
-- **Purpose**: This task focuses on working with the `border-block` property, which controls the top and bottom borders of a block-level element.
-- **Files**: [See feature files](Useful%20features/Border%20block)
+- ### Border block
+    - **Purpose**: This task focuses on working with the `border-block` property, which controls the top and bottom borders of a block-level element.
+    - **Files**: [See feature files](Useful%20features/Border%20block)
 
 ### - Nth child of
 - **Purpose**: This task involves understanding and using the `:nth-child()` pseudo-class to target specific child elements based on their position in the DOM.
