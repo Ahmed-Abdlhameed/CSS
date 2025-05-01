@@ -28,7 +28,7 @@ This repository contains a collection of notes, assignments and practice tasks t
     - [83 - 85: Media Queries](#83---85-media-queries)
     - [86 - 88: Global Values](#86---88-global-values)
 
-2. [Useful Features](#useful-features)
+2. [Useful Features](#useful-Features)
     - [Border Block](#border-block)
     - [Nth Child Of](#nth-child-of)
     - [Nesting Module](#nesting-module)
@@ -198,72 +198,72 @@ This repository contains a collection of notes, assignments and practice tasks t
 
 - ### Border Block
     - **Feature Purpose**: This task focuses on working with the `border-block` property, which controls the top and bottom borders of a block-level element.
-    - **[Explore Feature Files](Useful%20features/Border%20block)**
+    - **[Explore Feature Files](Useful%20Features/Border%20Block)**
     - **[Live Preview](https://codepen.io/Ahmed-Abdelhameed/full/xbxOjXK)**
 
 - ### Nth Child Of
     - **Feature Purpose**: This task involves understanding and using the `:nth-child()` pseudo-class to target specific child elements based on their position in the DOM.
-    - **[Explore Feature Files](Useful%20features/Nth%20child%20of)**
+    - **[Explore Feature Files](Useful%20Features/Nth%20Child%20Of)**
     - **[Live Preview](https://codepen.io/Ahmed-Abdelhameed/full/LEYZmOV)**
 
 - ### Nesting Module
     - **Feature Purpose**: This task covers the use of CSS nesting, allowing styles to be scoped within a parent rule for better readability and organization.
-    - **[Explore Feature Files](Useful%20features/Nesting%20module)**
+    - **[Explore Feature Files](Useful%20Features/Nesting%20Module)**
     - **[Live Preview](https://codepen.io/Ahmed-Abdelhameed/full/xbxOjPK)**
 
 - ### Is Pseudo Class
     - **Feature Purpose**: This task focuses on the new `:is()` pseudo-class, which allows multiple selectors to be grouped together to apply the same styles.
-    - **[Explore Feature Files](Useful%20features/Is%20pseudo%20class)**
+    - **[Explore Feature Files](Useful%20Features/Is%20Pseudo%20Class)**
     - **[Live Preview](https://codepen.io/Ahmed-Abdelhameed/full/emYzrGx)**
 
 - ### Has Pseudo Class
     - **Feature Purpose**: This task explores the `:has()` pseudo-class, enabling a parent element to apply styles based on its children’s characteristics.
-    - **[Explore Feature Files](Useful%20features/Has%20pseudo%20class)**
+    - **[Explore Feature Files](Useful%20Features/Has%20Pseudo%20Class)**
     - **[Live Preview](https://codepen.io/Ahmed-Abdelhameed/full/MYWeGEz)**
 
 - ### Where Pseudo Class
     - **Feature Purpose**: This task delves into the `:where()` pseudo-class, providing a way to style elements with a lower specificity compared to `:is()`.
-    - **[Explore Feature Files](Useful%20features/Where%20pseudo%20class)**
+    - **[Explore Feature Files](Useful%20Features/Where%20Pseudo%20Class)**
     - **[Live Preview](https://codepen.io/Ahmed-Abdelhameed/full/wBvWjPP)**
 
 - ### Empty Pseudo Class
     - **Feature Purpose**: This task focuses on the `:empty` pseudo-class, used to target elements that have no children (including text nodes).
-    - **[Explore Feature Files](Useful%20features/Empty%20pseudo%20class)**
+    - **[Explore Feature Files](Useful%20Features/Empty%20Pseudo%20Class)**
     - **[Live Preview](https://codepen.io/Ahmed-Abdelhameed/full/NPWrMay)**
 
 - ### Marker Pseudo Element
     - **Feature Purpose**: This task explains the `::marker` pseudo-element, which allows you to style the marker (bullet or number) of list items.
-    - **[Explore Feature Files](Useful%20features/Marker%20pseudo%20element)**
+    - **[Explore Feature Files](Useful%20Features/Marker%20Pseudo%20Element)**
     - **[Live Preview](https://codepen.io/Ahmed-Abdelhameed/full/EaxyLwB)**
 
 - ### Current Color Keyword
     - **Feature Purpose**: This task explores the use of the `currentColor` keyword, which allows elements to inherit the current text color for other properties like borders.
-    - **[Explore Feature Files](Useful%20features/Current%20color%20keyword)**
+    - **[Explore Feature Files](Useful%20Features/Current%20Color%20Keyword)**
     - **[Live Preview](https://codepen.io/Ahmed-Abdelhameed/full/YPzWLrW)**
 
 - ### Scroll Padding and Margin
     - **Feature Purpose**: This task focuses on the `scroll-padding` and `scroll-margin` properties, which control the space around elements during scrolling.
-    - **[Explore Feature Files](Useful%20features/Scroll%20padding%20and%20margin)**
+    - **[Explore Feature Files](Useful%20Features/Scroll%20Padding%20&%20Margin)**
     - **[Live Preview](https://codepen.io/Ahmed-Abdelhameed/full/RNwRyjo)**
 
 - ### Balanced Text With Text Wrap
     - **Feature Purpose**: This task explains how to achieve balanced text with proper wrapping, ensuring even spacing for better readability.
-    - **[Explore Feature Files](Useful%20features/Balanced%20text%20with%20text%20wrap)**
+    - **[Explore Feature Files](Useful%20Features/Balanced%20Text%20With%20Text%20Wrap)**
     - **[Live Preview](https://codepen.io/Ahmed-Abdelhameed/full/WbNxJEz)**
 
 - ### Outline Offset and Challenge
     - **Feature Purpose**: This task covers the `outline-offset` property, which shifts the outline away from the element’s border edge.
-    - **[Explore Feature Files](Useful%20features/Outline%20offset%20&%20challenge)**
+    - **[Explore Feature Files](Useful%20Features/Outline%20Offset%20&%20Challenge)**
     - **[Live Preview](https://codepen.io/Ahmed-Abdelhameed/full/VYwjxra)**
 
 - ### Select All Text With User Select
     - **Feature Purpose**: This task involves using the `user-select` property to enable or disable text selection on elements.
-    - **[Explore Feature Files](Useful%20features/Select%20all%20text%20with%20user%20select)**
+    - **[Explore Feature Files](Useful%20Features/Select%20All%20Text%20With%20User%20Select)**
     - **[Live Preview](https://codepen.io/Ahmed-Abdelhameed/full/gbOMzXW)**
 
 - ### Decorating Text Line, Style and Color
     - **Feature Purpose**: This task demonstrates how to style text decorations like underlines, strikethroughs, and overlines with different colors and line styles.
-    - **[Explore Feature Files](Useful%20features/Decorating%20text%20line%2C%20style%20&%20color)**
+    - **[Explore Feature Files](Useful%20Features/Decorating%20Text%20Line%2C%20Style%20&%20Color)**
     - **[Live Preview](https://codepen.io/Ahmed-Abdelhameed/full/mydELBR)**
 
 ---
@@ -272,10 +272,10 @@ This repository contains a collection of notes, assignments and practice tasks t
 
 The **Media** folder contains supplementary resources and notes for more topics:
   - [CSS Overview](Media/CSS.txt)
-  - [Important Topics](Media/Important%20topics.txt)
-  - [Selectors Reference](Media/Selectors%20refrence.txt)
+  - [Important Topics](Media/Important%20Topics.txt)
+  - [Selectors Reference](Media/Selectors%20Refrence.txt)
   - [CSS3 Nth Child](Media/CSS3_nth_child.PNG)
-  - [YouTube Playlist](Media/YouTube%20playlist.txt)
+  - [YouTube Playlist](Media/YouTube%20Playlist.txt)
 
 ---
 
