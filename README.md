@@ -83,9 +83,9 @@ This repository contains a collection of notes, assignments and practice tasks t
 ### 17 - 21: Text Formatting
 - **Purpose**: This task involves applying text formatting such as font size, family, and style to elements.
 - **Files**:
-  - [Assignment Questions](Assignments/17%20-%2021%20(Text%20formatting)/Questions.png)
-  - [Assignment Answers](Assignments/17%20-%2021%20(Text%20formatting)/Answers)
-  - [Live Preview](Assignments/17%20-%2021%20(Text%20formatting)/Live%20Preview.txt)
+  - [Assignment Questions](Assignments/17%20-%2021%20(Text%20Formatting)/Questions.png)
+  - [Assignment Answers](Assignments/17%20-%2021%20(Text%20Formatting)/Answers)
+  - [Live Preview](Assignments/17%20-%2021%20(Text%20Formatting)/Live%20Preview.txt)
 
 ### 22 - 26: Inheritance and Typography
 - **Purpose**: This task covers CSS inheritance and how typography properties are inherited by child elements.
