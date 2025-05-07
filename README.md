@@ -295,4 +295,4 @@ Feel free to fork the repository and contribute by adding more assignments or im
 
 ## License
 
-This repository is for personal documentation Purposes. Feel free to use or distribute its content as you wish.
+This repository is for personal documentation purposes. Feel free to use or distribute its content as you wish.
