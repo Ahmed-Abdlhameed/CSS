@@ -9,6 +9,7 @@ CSS Selectors 1
   - .class-name div, .class-name p
   - Element.class-name => p.class-name
   - .parent > .child => Direct Child
+
 ---------------------------------------------------------------------
 CSS Selectors 2
   - Element + Other Element => [div + p]
@@ -20,6 +21,7 @@ CSS Selectors 2
   - [Attribute~=Value] => Contains A Word
   - [Attribute*=Value] => Contains A String
   - [Attribute^=Value] => Start With A String
+
 ---------------------------------------------------------------------
 CSS Selectors 3
   - :first-child
@@ -28,6 +30,7 @@ CSS Selectors 3
   - :last-of-type
   - :only-child
   - :only-of-type
+
 ---------------------------------------------------------------------
 CSS Selectors 4
   - :not(Selectors)
@@ -35,6 +38,7 @@ CSS Selectors 4
   - :nth-last-child(n)
   - :nth-of-type(n)
   - :nth-last-of-type(n)
+
 ---------------------------------------------------------------------
 CSS Selectors 5
   - :root
@@ -45,4 +49,3 @@ CSS Selectors 5
   - :focus
   - ::selection
   - ::placeholder
----------------------------------------------------------------------
