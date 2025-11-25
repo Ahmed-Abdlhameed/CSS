@@ -1,10 +1,10 @@
-# Summary Of CSS Styling Language Topics, Notes & Assignments:
+# Summary of CSS Styling Language Topics, Notes & Assignments:
 
 This repository contains a collection of notes, assignments and practice tasks that I’ve completed to enhance my understanding of CSS styling language. Each folder represents a different set of topics, showcasing how I approached and learned each concept.
 
 ---
 
-## Table of contents
+## Table of Contents
 
 1. [Assignments](#assignments)
     - [1 - 4: Elements and Naming](#1---4-elements-and-naming)
@@ -44,7 +44,7 @@ This repository contains a collection of notes, assignments and practice tasks t
     - [Select All Text With User Select](#select-all-text-with-user-select)
     - [Decorating Text Line, Style and Color](#decorating-text-line-style-and-color)
 2. [Media](#media)
-3. [How To Use](#how-to-use)
+3. [How to Use](#how-to-use)
 4. [Contributions](#contributions)
 5. [License](#license)
 
@@ -279,7 +279,7 @@ The **Media** folder contains supplementary resources and notes for more topics:
 
 ---
 
-## How To Use
+## How to Use
 
 1. Navigate to assignments folders to review the tasks and its solutions.
 2. Experiment the code in each folder to review the output of the task solution.
