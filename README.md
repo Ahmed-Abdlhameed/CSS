@@ -44,9 +44,9 @@ This repository contains a collection of notes, assignments and practice tasks t
     - [Select All Text With User Select](#select-all-text-with-user-select)
     - [Decorating Text Line, Style and Color](#decorating-text-line-style-and-color)
 2. [Media](#media)
-3. [How to Use](#how-to-use)
-4. [Contributions](#contributions)
-5. [License](#license)
+3. [Getting Started (How to Use)](#getting-started-how-to-use)
+4. [Contributions (Adding Your Own Solutions)](#contributions-adding-your-own-solutions)
+5. [License & Author](#license--author)
 
 ---
 
@@ -279,7 +279,7 @@ The **Media** folder contains supplementary resources and notes for more topics:
 
 ---
 
-## How to Use
+## Getting Started (How to Use)
 
 1. Navigate to assignments folders to review the tasks and its solutions.
 2. Experiment the code in each folder to review the output of the task solution.
@@ -287,12 +287,12 @@ The **Media** folder contains supplementary resources and notes for more topics:
 
 ---
 
-## Contributions
+## Contributions (Adding Your Own Solutions)
 
-Feel free to fork the repository and contribute by adding more assignments or improving the exsiting solutions. Pull requests are welcomed!
+Feel free to fork the repository and contribute by adding more assignments or improving the existing solutions. Pull requests are welcomed!
 
 ---
 
-## License
+## License & Author
 
-This repository is for personal documentation purposes. Feel free to use or distribute its content as you wish.
+This repository is for personal documentation purposes. Feel free to use or distribute its content as you wish. Built by **Ahmed Abdelhameed**. Find me on [GitHub](https://github.com/Ahmed-Abdlhameed).
